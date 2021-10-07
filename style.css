@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 80px;
+}
+
+.header1{
+    background-color:transparent;
+    width: 100vw;
+    height: 35vh;
+    display: flex;
+    justify-content:center;
+}
+
+.entranessaporra{
+    width: 15%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    align-content: center;
+    transition: .5s;
+    margin-top: -20%;
+}
+
+.img-logo{
+    object-fit: cover;
+    object-position: bottom;
+    min-width: 150px;
+    min-height: 211px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+}
+
+.entranessaporra.ativo{
+    margin-top: 0%;
+    transition: ease-in-out 1s;
+}
+
+.intro{
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    transition: 1s;
+}
+
+.logo-cabecalho{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 1s;
+}
+
+.esquerda{
+    position:absolute;
+    top: 74.5%;
+    width: 0vw;
+    height: 6px;
+    right: 100%;
+    bottom: -20px;
+    background-color: #f9fff9;
+    opacity: 0;
+}
+
+.direita{
+    position:absolute;
+    top: 74.5%;
+    width: 0vw;
+    height: 5px;
+    bottom: -20px;
+    background-color:#f9fff9;
+    opacity: 0;
+}
+
+.laranjadir{
+    position:absolute;
+    top: 76%;
+    width: 0vw;
+    height: 71px;
+    bottom: -20px;
+    left: 100%;
+    background-color:#ff7f26;
+    opacity: 1;
+}
+
+.laranjaesq{
+    position:absolute;
+    top: 76%;
+    width: 0vw;
+    height: 71px;
+    right: 100%;
+    bottom: -20px;
+    background-color:#ff7f26;
+    opacity: 1;
+}
+
+.logo{
+    position: relative;
+    display: inline-block;
+    bottom: -30px;
+    opacity: 1;
+}
+
+.logo.ativo{
+    bottom: 0;
+    opacity: 1;
+    transition: ease-in-out 0.5s;
+}
+
+.esquerda.ativo{
+    bottom: 0;
+    opacity: 1;
+    transition: ease-in-out 0.5s;
+}
+
+.direita.ativo{
+    bottom: 0;
+    opacity: 1;
+    transition: ease-in-out 0.5s;
+}
+
+.laranjadir.ativo{
+    bottom: 0;
+    opacity: 1;
+    transition: ease-in-out 0.5s;
+}
+
+.laranjaesq.ativo{
+    bottom: 0;
+    opacity: 1;
+    transition: ease-in-out 0.5s;
+}
+
+.laranjaesq.sair{
+    bottom: 150px;
+    opacity: 0;
+    transition: ease-in-out 0.5s;
+}
+
+.laranjadir.sair{
+    bottom: 150px;
+    opacity: 0;
+    transition: ease-in-out 0.5s;
+}
+
+.esquerda.sair{
+    bottom: 150px;
+    opacity: 0;
+    transition: ease-in-out 0.5s;
+}
+
+.direita.sair{
+    bottom: 150px;
+    opacity: 0;
+    transition: ease-in-out 0.5s;
+}
+
+.logo.sair{
+    bottom: 150px;
+    opacity: 0;
+    transition: ease-in-out 0.5s;
+}
+
+.nav_bar{
+    width: 72%;
+    height: auto;
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    top: 0;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    height: 22.5%;
+    z-index: 0;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 auto;
+    background-color: #ff7f26;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    transition: 1s;
+    margin-left: -200%;
+}
+
+.container.ativo{
+    margin-left: 0%;
+    transition: ease-in-out 1s;
+}
+
+.lista-menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+
+.container ul li{
+    color: black;
+    margin-left: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+    
+}
+
+.container ul li:hover{
+    color: black;
+    border-bottom: 2px solid black;
+}
+
+.container ul li a{
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+    text-transform: uppercase;
+}
